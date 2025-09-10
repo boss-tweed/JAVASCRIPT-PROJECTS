@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Math Operators</title>
+        <meta charset="UTF-8">
+        <script src="JS/main.js"></script>
+    </head>
+    <body>
+        <p onmouseover="add_Func()" id="result0">When we use an add function:</p>
+
+        <p onmouseover="sub_Func()" id="result">
+            Here is the result!
+        </p>
+    
+        <p onclick="div_Func()" id="result2">
+            When we use a divide func:
+        </p>
+        
+        <p>When we use a multiply function:</p>
+       <input type="text" onkeypress="mult_Func()">
+
+       <p>When we us multiple operators:</p>
+       <input type="text" onkeypress="multi_Op()">
+
+       <p>Example of a modulus operator</p>
+       <input type="text" onkeypress="remain()">
+
+       <p>Example of the operand</p>
+       <input type="text" onkeypress="negate()">
+       
+       <p>Example of Math Method</p>
+       <button onclick="square_Rt()" id="root">
+        Press for Square Root!
+       </button>
+    </body>
+</html>
