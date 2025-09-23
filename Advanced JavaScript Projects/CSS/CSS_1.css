@@ -1,0 +1,52 @@
+body{
+    background-color: chocolate;
+}
+
+h1{
+    font-family: fantasy;
+    font-weight: 400;
+    text-transform: uppercase; /*Displays uppercase characters*/
+    text-align: center;
+    margin-top: 5%; /*Slight margin space above the top*/
+    color: black;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*Styles form elements*/
+form{
+    margin: auto; /*Centers conact form in combo w/ width*/
+    width: 250px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Styles input text*/
+input[type="text"]{
+    width: 100%; /*Full width of container*/
+    padding: 8px;
+    border: 2px solid; /*Style of border outline*/
+    border-radius: 5px; /*Rounds edge of the border*/
+    box-sizing: border-box; /*Creates box w/ border around text*/
+    margin-top: 5px; /*Gives margin to top as well as bottom next line down*/
+    margin-bottom: 14px;
+    resize: vertical; /*Allows a vertical resize by user*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+
+/*Styles submit button*/
+input[type="submit"]{
+    background-color: rgb(49, 221, 163); /*Color of button itself*/
+    color: black;
+    padding: 4px 15px; /*Gives padding to the inside of the button around text*/
+    border-radius: 5px; /*Rounds edges of button*/
+    cursor: pointer;
+    font-family: fantasy;
+    font-size: 18px;
+}

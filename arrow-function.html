@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Arrow Function</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="arrow"></p>
+        <p id="some"></p>
+
+        <script>
+            arrowMethod = (g, f) => g / f;
+
+            let result = arrowMethod(968, 88);
+            document.getElementById("arrow").innerHTML = "This is the result: " + result
+
+            var ages = [6, 23, 36, 78, 102, 30];
+            findAge = (age) => age >= 102;
+
+            function thisSome(){
+                document.getElementById("some").innerHTML = ages.some(findAge);
+            }
+        </script>
+    </body>
+</html>

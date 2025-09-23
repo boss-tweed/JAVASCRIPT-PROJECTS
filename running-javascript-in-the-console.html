@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Running JavaScript in the Console</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="globalVariables" onclick="global()">Global - click here</p>
+        <p id="localVariables" onclick="local()">Local - click here</p>
+        <hr>
+
+        <p id="concat" onclick="concatenate()">Click here for a concatenated sentence</p>
+        <hr>
+
+        <button onclick="newCourse()">Click here for new course</button>
+        <p id="displayCourse"></p>
+
+        <div id="test">
+            <p><button onclick="openWin()">Open myWindow</button></p>
+            <p><button onclick="closeWin()">Close myWindow</button></p>
+            <p><button onclick="checkWin()">Check myWindow</button></p>
+        </div>
+        <hr>
+        <!--Alert method for console-->
+        <button onclick="myFunction()">Try it</button>
+        <!--Open window method for console-->
+        <button onclick="myFunction2()">Try it again</button>
+
+        <p id="displayAge"></p>
+
+        <p id="test2"></p>
+        <script>
+            //a and b are global variables that can be edited in the console
+            let a = 3;
+            let b = 4;
+
+            function global(){
+                result = a + b;
+                document.getElementById("globalVariables").innerHTML =
+                "Global variable a (" + a + ") plus global variable b ("
+                + b + ") equals " + result;
+            }
+            
+            function local(){
+                let c = 4;
+                let d = 3;
+                result = c + d;
+                document.getElementById("localVariables").innerHTML =
+                "Local variable c (" + c + ") plus local variable d ("
+                + d + ") equals " + result;
+            }
+
+            //Declare values for sentence1 and sentence2 in the console
+            let sentence1;
+            let sentence2;
+
+            function concatenate(){
+                //Concatenate sentense1 and sentence2 using
+                //the .concat() method
+                let concatSent = sentence1.concat(sentence2);
+
+                //Display result on webpage
+                document.getElementById("concat").innerHTML = concatSent;
+
+                //Display result in the console
+                console.log(concatSent);
+            }
+
+            function Course(Name, Type, Duration){
+                this.courseName = "Today's new course is: " + Name + "<br>";
+                this.courseType = "Type: " + Type + "<br>";
+                this.courseDur = "Course Length: " + Duration + " hours";
+
+            }
+
+            let js = new Course("JavaScript", "Code", 55);
+            let py = new Course("Python", "Code", 90);
+
+            //Get user input and calculate age
+            //based on the year
+            let year = prompt("Typ in the year you were born");
+            let yearNow = new Date().getFullYear();
+            let age = Math.floor(yearNow - year);
+
+            let myWindow;
+
+            function openWin(){ //Window closed property
+                myWindow = window.open("", "myWindow", "width=400,height=200");
+            }
+
+            function closeWin(){
+                if (myWindow){
+                    myWindow.close();
+                }
+            }
+
+            let url = window.document.URL; //Window object property
+        </script>
+    </body>
+</html>
