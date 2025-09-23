@@ -190,7 +190,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2){
         if (x1 <= x2 && y1 >= y2){
             if (x < x2) { x += 10; }
             if (y > y2) { y -= 10; }
-            if (x >= x2 && y <= y22) { cancelAnimationFrame(animationLoop); } 
+            if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); } 
         }
     }
     //This clears our canvas after our win line is drawn
