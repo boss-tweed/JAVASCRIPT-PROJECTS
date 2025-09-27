@@ -43,10 +43,9 @@ ctx.stroke();
 //Add a linear gradient method to the canvas element
 function draw(){
     var canvas = document.getElementById("myCan");
-    ctx = canvas.getContext("2d");
-    var gradient = ctx.createLinearGradient(0, 0, 170, 0);
-    gradient.addColorStop(0, "green");
-    gradient.addColorStop(0.5, "cyan");
+    var ctx = canvas.getContext("2d");
+    var gradient = ctx.createLinearGradient(0, 0, 0, 150);
+    gradient.addColorStop(0, "cyan");
     gradient.addColorStop(1, "green");
 
     ctx.fillStyle = gradient;                    
