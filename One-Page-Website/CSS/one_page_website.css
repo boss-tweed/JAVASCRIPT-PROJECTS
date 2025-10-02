@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap'); /*This will be the primary 
+font used from fonts.google.com*/
+
+/*BODY*/
+
+body{
+    background-color: rgb(1, 1, 75);
+}
+
+/*HEADERS/PARAGRAPH*/
+
+/*Styles all headers 1-3 on the page, 
+as well as paragraphs*/
+h1, h2, h3, p, blockquote{
+    color: rgb(210, 210, 210);
+    text-align: center;
+}
+
+h1{
+    font-family: "Audiowide", sans-serif;
+    font-size: 70px;
+}
+
+h2{
+    font-family: "Audiowide", sans-serif;
+    font-size: 40px; 
+}
+
+h3{
+    font-family: "Audiowide", sans-serif;
+    font-size: 25px;
+}
+
+p{
+    font-family: "Audiowide", sans-serif;
+    font-size: 20px;
+}
+
+/*NAVBAR*/
+
+li{
+    display: inline;
+    padding: 5px;
+}
+
+/*Styles the font of the anchor tags*/
+a{
+    font-family: "Audiowide", sans-serif; /*Font from 
+    fonts.google.com*/
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(241, 206, 162); /*Changes the color of the anchor tags 
+    when user hovers cursor over it*/
+}
+
+/*FORM*/
+
+/*Styles the form section of the page*/
+form{
+    display: table;
+    margin: auto;
+    padding: 20px;
+}
+
+input{
+    border: 3px solid rgb(210, 210, 210); /*Gives the input boxes
+    a solid, colored border around them*/
+    border-radius: 3px;
+    padding: 1px;
+    font-size: 20px;
+    margin: 10px 15px 10px 0px;
+    width: 200px; /*Increases the width of the input boxes 
+    in the form*/
+}
+
+/*Type selector for the text area element/box*/
+textarea{
+    width: 100%;
+    height: 100px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border: 3px solid rgb(210, 210, 210);
+    border-radius: 3px;
+    font-size: 15px;
+    resize: both;
+}
+
+/*Styles the submit button*/
+input[type=submit]{
+    border: none;
+    border-radius: 3px;
+    font-family: "Audiowide", sans-serif; /*Font from
+    fonts.google.com*/
+    font-size: 15px;
+    color: rgb(210, 210, 210);
+    padding: 15px 30px;
+    margin: 3px 1px;
+    cursor: pointer;
+    float: left;
+}
+
+/*FOOTER*/
+
+footer{
+    margin-top: 50px;
+    /*Negative margin stretch the edge of the
+    left an right spanning the wwhole width of the webpage*/
+    margin-left: -10px;
+    margin-right: -10px;
+    bottom: 0; /*Positions the footer at the bottom
+    of the screen*/
+}
+
+/*Styles elements within the footer tags*/
+table{
+    width: 100%;
+}
+
+td{
+    text-align: center;
+    width: 33%;
+}
+
+/*MODAL LIGHTBOX*/
+
+.row > .column{
+    padding: 0 8px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Create four equal columns that float next to one another*/
+.column{
+    float: left;
+    width: 18%;
+}
+
+/*Modal Background*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/*Modal Content*/
+.modal-content{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/*Close Button*/
+.close{
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Hide slide by default*/
+.mySlides{
+    display: none;
+}
+
+/*Next/Prev buttons*/
+.prev,
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/*Position the next button to the right*/
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*On hover, add a black background w/ a little see-through*/
+.prev-hover,
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Number text*/
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*Caption Text*/
+.caption-container{
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo{
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover{
+    opacity: 1;
+}
+
+img.hover-shadow{
+    transition: 0.3s;
+}
+
+.hover-shadow:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
