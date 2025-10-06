@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Tree"></p>
+        <script>
+            var XML_Parser, XML_Document;
+            //creates a text string
+            var Console = "<console>" +
+                "<brand>Sega</brand>" +
+                "<model>Dreamast</model>" +
+                "<format>Disk</format>" +
+                "<year>1999</year>" +
+                "</console>";
+
+                //creates XML DOM parser
+                XML_Parser = new DOMParser();
+
+                //creates a new XML DOM object using the text string
+                XML_Document = XML_Parser.parseFromString(Console,"text/xml");
+
+                document.getElementById("XML_Tree").innerHTML =
+                XML_Document.getElementsByTagName("format") [0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
