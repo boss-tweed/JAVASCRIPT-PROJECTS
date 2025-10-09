@@ -4,8 +4,19 @@ html{
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     max-width: 500px;
     margin: 0 auto;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 input{
@@ -33,4 +44,9 @@ footer{
     background-color: blueviolet;
     color: white;
     text-align: center;
+}
+
+/*adds padding between items in array after one is removed*/
+.remove{
+    padding-bottom: 5px;
 }

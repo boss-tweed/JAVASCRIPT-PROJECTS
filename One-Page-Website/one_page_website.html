@@ -1,179 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       <title>AstrophotoLovers.com</title>
-       <meta charset="UTF-8">
-       <meta author="name" content="Garrett Fisher">
-       <link rel="stylesheet" href="CSS/one_page_website.css">
-    </head>
-    <body>
-        <!--NAVBAR-->
-        <nav>
-            <ul>
-                <a href="#startrail"><li>Star Trails</li></a>
-                <a href="#desertnight"><li>Desert Nights</li></a>
-                <a href="#brightmw"><li>Bright Milky Way</li></a>
-                <a href="#greenmw"><li>Green Milky Way</li></a>
-                <a href="#milkywayd"><li>Milky Way in the Desert</li></a>
-                <a href="#bestcamera"><li>Best Camera Settings</li></a>
-                <a href="#startrailp"><li>Make Star Trail Photos</li></a>
-                <a href="#contactus"><li>Contact Us</li></a>
-            </ul>
-        </nav>
-        <!--HEADER-->
-        <header>
-            <div>
-                <h1>Greetings from AstrophotoLovers!</h1>
-                <p>Where you can find all things dedicated to astrophotography!</p>
-            </div>
-        </header>
-        <section>
-            <div>
-                <blockquote cite="https://everydaywanderer.com/stargazing-quotes#:~:text=%E2%80%9CThere%20wouldn't%20be%20a,the%20trees%20and%20the%20stars.%E2%80%9D">
+
+<head>
+    <title>AstrophotoLovers.com</title>
+    <meta charset="UTF-8">
+    <meta author="name" content="Garrett Fisher">
+    <link rel="stylesheet" href="CSS/one_page_website.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Sticky Form button-->
+    <div class="sticky">
+        <button onclick="openForm()">Open Form</button>
+    </div>
+
+    <!--NAVBAR-->
+    <nav>
+        <ul>
+            <a href="#startrail">
+                <li>Star Trails</li>
+            </a>
+            <a href="#desertnight">
+                <li>Desert Nights</li>
+            </a>
+            <a href="#brightmw">
+                <li>Bright Milky Way</li>
+            </a>
+            <a href="#greenmw">
+                <li>Green Milky Way</li>
+            </a>
+            <a href="#milkywayd">
+                <li>Milky Way in the Desert</li>
+            </a>
+            <a href="#bestcamera">
+                <li>Best Camera Settings</li>
+            </a>
+            <a href="#startrailp">
+                <li>Make Star Trail Photos</li>
+            </a>
+            <a href="#contactus">
+                <li>Contact Us</li>
+            </a>
+        </ul>
+    </nav>
+    <!--HEADER-->
+    <header>
+        <div>
+            <h1>Greetings from AstrophotoLovers!</h1>
+            <p>Where you can find all things dedicated to astrophotography!</p>
+        </div>
+    </header>
+    <section>
+        <div>
+            <blockquote
+                cite="https://everydaywanderer.com/stargazing-quotes#:~:text=%E2%80%9CThere%20wouldn't%20be%20a,the%20trees%20and%20the%20stars.%E2%80%9D">
                 There wouldn’t be a sky full of stars if we were all meant to wish on the same one.<br>
                 – Frances Clark, American pianist
-                </blockquote>
-            </div>
-        </section>
-        <!--ASTROPHOTOGRAPHY IMAGES-->
-        <section>
+            </blockquote>
+        </div>
+    </section>
+    <!--ASTROPHOTOGRAPHY IMAGES-->
+    <section>
+        <div>
+            <h2>Check out our photo gallery of submisions from our many patrons!</h2>
             <div>
-                <h2>Check out our photo gallery of submisions from our many patrons!</h2>
-                <div>
-                    <!--STAR TRAILS-->
-                    <div id="startrail">
-                        <h3>Star Trails</h3>
-                        <img src="images\images (3).jpg" alt="star trails photo">
-                    </div>
-                    <!--DESERT NIGHTS-->
-                    <div id="desertnight">
-                        <h3>Desert Nights</h3>
-                        <img src="images\download.jpg" alt="astrophoto from the desert">
-                    </div>
-                    <!--BRIGHT MILKY WAY-->
-                    <div id="brightmw">
-                        <h3>Bright Milky Way</h3>
-                        <img src="images\images.jpg" alt="bright milky way">
-                    </div>
-                    <!--GREEN MILKY WAY-->
-                    <div id="greenmw">
-                        <h3>Green Milky Way</h3>
-                        <img src="images\images (1).jpg" alt="green milky way">
-                    </div>
-                    <!--MILKY WAY IN THE DESERT-->
-                    <div  id="milkywayd">
-                        <h3>Milky Way in the Desert</h3>
-                        <img src="images\images (2).jpg" alt="milky way in the desert">
-                    </div>
+                <!--STAR TRAILS-->
+                <div class="single-feat-image-header" id="startrail">
+                    <h3>Star Trails</h3>
+                    <img src="images\images (3).jpg" alt="star trails photo">
                 </div>
-            </div>
-        </section>
-        <!--VIDEOS-->
-        <section>
-            <!--BEST CAMERA SETTINGS FOR ASTROPHOTOGRAPHY-->
-            <div id="bestcamera">
-                <h3>Best Camera Settings for Astrophotography</h3>
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/d4H5MneEAx8?si=2kfKIaVxoJrReCW7" alt="A how-to on best camera setting for shooting the night sky"></iframe>
-            </div>
-            <!--MAKING STAR TRAIL PHOTOS-->
-            <div id="startrailp">
-                <h3>How to Make Star Trail Photos</h3>
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/dJMZQgyP7Dc?si=NKqL90SrPPjEsZ6j" alt="How-to on making star trail photos"></iframe>
-            </div>
-        </section>
-        <!--Images for the modal-->
-        <div class="row">
-            <div class="column">
-                <img src="images/download.jpg" onclick="openModal();currentSlide()" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="images/images (1).jpg" onclick="openModal();currentSlide()" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="images/images (2).jpg" onclick="openModal();currentSlide()" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="images/images.jpg" onclick="openModal();currentSlide()" class="hover-shadow">
-            </div>
-        </div>
-        <!--Modal/Lightbox-->
-        <div id="myModal" class="modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-                <div class="mySlides">
-                    <div class="numbertext">1 / 5</div>
-                    <img src="images/download_1280.jpg" width="100%">
+                <!--DESERT NIGHTS-->
+                <div id="desertnight">
+                    <h3>Desert Nights</h3>
+                    <img src="images\download.jpg" alt="astrophoto from the desert">
                 </div>
-                <div class="mySlides">
-                    <div class="numbertext">2 / 5</div>
-                    <img src="images/images (1)_1280.jpg" width="100%">
+                <!--BRIGHT MILKY WAY-->
+                <div id="brightmw">
+                    <h3>Bright Milky Way</h3>
+                    <img src="images\images.jpg" alt="bright milky way">
                 </div>
-                <div class="mySlides">
-                    <div class="numbertext">3 / 5</div>
-                    <img src="images/images (2)_1280.jpg" width="100%">
+                <!--GREEN MILKY WAY-->
+                <div id="greenmw">
+                    <h3>Green Milky Way</h3>
+                    <img src="images\images (1).jpg" alt="green milky way">
                 </div>
-                <div class="mySlides">
-                    <div class="numbertext">5 / 5</div>
-                    <img src="images/images_1280.jpg" width="100%">
-                </div>
-                <!--Next/prev controls-->
-                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-                <a class="next" onclick="plusSlides(1)">&#10095</a>
-                <!--Captions-->
-                <div class="caption-container">
-                    <p id="caption"></p>
-                </div>
-                <!--Thumbnails-->
-                <div class="column">
-                    <img class="demo" src="images/download.jpg" width="80%" onclick="currentSlide(1)" alt="Desert Nights">
-                </div>
-                <div class="column">
-                    <img class="demo" src="images/images (1).jpg" width="80%" onclick="currentSlide(2)" alt="Green Milky Way">
-                </div>
-                <div class="column">
-                    <img class="demo" src="images/images (2).jpg" width="80%" onclick="currentSlide(3)" alt="Milky Way in the Desert">
-                </div>
-                <div class="column">
-                    <img class="demo" src="images/images.jpg" width="80%" onclick="currentSlide(5)" alt="Bright Milky Way">
+                <!--MILKY WAY IN THE DESERT-->
+                <div id="milkywayd">
+                    <h3>Milky Way in the Desert</h3>
+                    <img src="images\images (2).jpg" alt="milky way in the desert">
                 </div>
             </div>
         </div>
-        <!--FORM-->
-        <section>
-            <div id="contactus">
-               <h3>
-                Please provide your contact information 
+    </section>
+    <!--VIDEOS-->
+    <section>
+        <!--BEST CAMERA SETTINGS FOR ASTROPHOTOGRAPHY-->
+        <div id="bestcamera">
+            <h3>Best Camera Settings for Astrophotography</h3>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/d4H5MneEAx8?si=2kfKIaVxoJrReCW7"
+                alt="A how-to on best camera setting for shooting the night sky"></iframe>
+        </div>
+        <!--MAKING STAR TRAIL PHOTOS-->
+        <div id="startrailp">
+            <h3>How to Make Star Trail Photos</h3>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/dJMZQgyP7Dc?si=NKqL90SrPPjEsZ6j"
+                alt="How-to on making star trail photos"></iframe>
+        </div>
+    </section>
+    <!--Images for the modal-->
+    <div class="row">
+        <div class="column">
+            <img src="images/download.jpg" onclick="openModal();currentSlide()" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="images/images (1).jpg" onclick="openModal();currentSlide()" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="images/images (2).jpg" onclick="openModal();currentSlide()" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="images/images.jpg" onclick="openModal();currentSlide()" class="hover-shadow">
+        </div>
+    </div>
+    <!--Modal/Lightbox-->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                <img src="images/download_1280.jpg" width="100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                <img src="images/images (1)_1280.jpg" width="100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                <img src="images/images (2)_1280.jpg" width="100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                <img src="images/images_1280.jpg" width="100%">
+            </div>
+            <!--Next/prev controls-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+            <!--Captions-->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+            <!--Thumbnails-->
+            <div class="column">
+                <img class="demo" src="images/download.jpg" width="80%" onclick="currentSlide(1)" alt="Desert Nights">
+            </div>
+            <div class="column">
+                <img class="demo" src="images/images (1).jpg" width="80%" onclick="currentSlide(2)"
+                    alt="Green Milky Way">
+            </div>
+            <div class="column">
+                <img class="demo" src="images/images (2).jpg" width="80%" onclick="currentSlide(3)"
+                    alt="Milky Way in the Desert">
+            </div>
+            <div class="column">
+                <img class="demo" src="images/images.jpg" width="80%" onclick="currentSlide(5)" alt="Bright Milky Way">
+            </div>
+        </div>
+    </div>
+    <!--Auto Slideshow-->
+    <div id="slideshow">
+        <div>
+            <img src="images/download.jpg.">
+        </div>
+        <div>
+            <img src="images/images (1).jpg">
+        </div>
+        <div>
+            <img src="images/images (2).jpg">
+        </div>
+    </div>
+
+    <p id="json"></p>
+
+    <p id="consoleFact"></p>
+
+    <p id="consoleStore"></p>
+    <!--FORM-->
+    <section>
+        <div id="contactus">
+            <h3>
+                Please provide your contact information
                 and a brief message of your inquiry.
-               </h3> 
-               <div>
-                    <form>
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name"><br>
-                        <input type="email" placeholder="Email">
-                        <input type="tel" placeholder="Phone Number"><br>
-                        <textarea placeholder="Type message here..."></textarea><br>
-                        <input type="submit" value="Submit">
-                    </form> 
-               </div>
+            </h3>
+
+            <div id="myForm">
+                <form>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name"><br>
+                    <input type="email" placeholder="Email">
+                    <input type="tel" placeholder="Phone Number"><br>
+                    <textarea placeholder="Type message here..."></textarea><br>
+                    <input type="submit" value="Submit">
+                    <button type="button" onclick="closeForm()">Close</button>
+                </form>
             </div>
-        </section>
-        <!--FOOTER-->
-        <footer>
-            <table>
-                <tr>
-                    <td>
-                        <p>AstrophotoLovers &copy;</p>
-                    </td>
-                    <td>
-                        <p>345 Blue Heeler Ave. Suite 11</p>
-                        <p>Tucson, AZ 85641</p>
-                    </td>
-                    <td>
-                        <p>503-268-9251</p>
-                    </td>
-                </tr>
-            </table>
-        </footer>
-        <script src="JS/one_page_website.js"></script>
-    </body>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p>AstrophotoLovers &copy;</p>
+                </td>
+                <td>
+                    <p>345 Blue Heeler Ave. Suite 11</p>
+                    <p>Tucson, AZ 85641</p>
+                </td>
+                <td>
+                    <p>503-268-9251</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <script src="JS/one_page_website.js"></script>
+</body>
+
 </html>

@@ -37,3 +37,41 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+//JQuery Auto Slideshow
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+  .fadeOut(1000)
+  .next()
+  .fadeIn(1000)
+  .end()
+  .appendTo('#slideshow');
+}, 3000);
+
+//Pop Up Form
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+var Console = { "brand":"Sony", "model":"PS5", "format":"Disk", "gen":"5"};
+var myJSON = JSON.stringify(Console);
+
+document.getElementById("json").innerHTML = myJSON;
+
+var Console = '{ "brand":"Sony", "model":"PS5", "format":"Disk", "gen":"5"}';
+var JSONstring = JSON.parse(Console);
+
+document.getElementById("consoleFact").innerHTML = " The " + JSONstring.brand + " " +
+  JSONstring.model;
+
+localStorage.setItem("format", "Disk");
+
+document.getElementById("consoleStore").innerHTML = localStorage.getItem("format");

@@ -252,3 +252,54 @@ img.hover-shadow{
 .hover-shadow:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/*Image Zoom In*/
+
+@keyframes zoominoutsinglefeatured{
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.single-feat-image-header img{
+    animation: zoominoutsinglefeatured 15s forwards;
+}
+
+/*Smooth Scrolling*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Slideshow*/
+
+#slideshow{
+    margin: 50px auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 00 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow > div{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+/*Sticky contact button*/
+div.sticky{
+    position: sticky; 
+    top: 0;
+    padding: 50px;
+    font-size: 20px;
+}
